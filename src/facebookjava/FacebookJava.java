@@ -21,7 +21,7 @@ public class FacebookJava {
     public static void main(String[] args) throws FacebookException, MalformedURLException {
         // TODO code application logic here
          int opcion;
-            Seguridad face = new Seguridad();
+            //Seguridad face = new Seguridad();
             do{
             opcion= Integer.parseInt(JOptionPane.showInputDialog("1) Publicar Estado. \n2) Me gusta. \n3) Obtener Noticias. \n4) Mirar mi Biografía. \n5) Comentario en Foto. \n6) Comentario en Estado. \n7) URL con Imagen. \n0) Salir del Programa."));
             switch(opcion){
