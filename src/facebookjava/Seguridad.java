@@ -96,16 +96,16 @@ public class Seguridad {
             Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Publicar un comentario en una foto tuya seleccionando el ID.
-//     * ?fbid=1435360446539314 (este seria el ID de la foto).
-//     * Tiene que ser una foto tuya no vale la de otro usuario de Facebook.
-//     * @throws FacebookException 
-//     */
-//    public void publicarComentarioFoto() throws FacebookException{
-//        facebook.commentPhoto("1349349925140367", "Hola bonito buga");
-//        
-//    }
+    /**
+     * Publicar un comentario en una foto tuya seleccionando el ID.
+     * ?fbid=1435360446539314 (este seria el ID de la foto).
+     * Tiene que ser una foto tuya no vale la de otro usuario de Facebook.
+     * @throws FacebookException 
+     */
+    public void publicarComentarioFoto() throws FacebookException{
+        facebook.commentPhoto("1349349925140367", "Hola bonito buga");
+        
+    }
 //    /**
 //     * Publica un comentario en un estado tuyo seleccionando la posicion (puede ser estado, foto o video subido por ti).
 //     * Tiene que ser un estado tuyo no vale uno de otra persona que te haya etiquetado.
