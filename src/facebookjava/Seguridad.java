@@ -106,17 +106,17 @@ public class Seguridad {
         facebook.commentPhoto("1349349925140367", "Hola bonito buga");
         
     }
-//    /**
-//     * Publica un comentario en un estado tuyo seleccionando la posicion (puede ser estado, foto o video subido por ti).
-//     * Tiene que ser un estado tuyo no vale uno de otra persona que te haya etiquetado.
-//     */
-//    
-//    public void publicarComentarioEstado(){
-//        try {
-//            facebook.commentPost(results.get(1).getId(), "Prueba");
-//        } catch (FacebookException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    } 
+    /**
+     * Publica un comentario en un estado tuyo seleccionando la posicion (puede ser estado, foto o video subido por ti).
+     * Tiene que ser un estado tuyo no vale uno de otra persona que te haya etiquetado.
+     */
+    
+    public void publicarComentarioEstado(){
+        try {
+            facebook.commentPost(results.get(1).getId(), "Prueba");
+        } catch (FacebookException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    } 
     
 }
