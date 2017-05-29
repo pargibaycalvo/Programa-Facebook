@@ -77,14 +77,14 @@ public class Seguridad {
             Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Buscador de noticias en Facebook relacionada con la palabra clave que tu elijas.
-//     * @throws FacebookException 
-//     */
-//    public void buscarNoticias() throws FacebookException{
-//        ResponseList<Post> results = facebook.getPosts("reebok");
-//        System.out.println(results.toString());
-//    }
+    /**
+     * Buscador de noticias en Facebook relacionada con la palabra clave que tu elijas.
+     * @throws FacebookException 
+     */
+    public void buscarNoticias() throws FacebookException{
+        ResponseList<Post> results = facebook.getPosts("reebok");
+        System.out.println(results.toString());
+    }
 //    /**
 //     * Mirar tu biografía, si tienes algo nuevo que te han etiquetado, etc y sus comentarios.
 //     */
