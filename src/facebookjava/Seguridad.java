@@ -39,84 +39,84 @@ public class Seguridad {
         facebook = ff.getInstance();
         
     }
-    /**
-     * Publica el estado que tu elijas en tu cuenta de facebook mediante el menú.
-     * @param postId 
-     */
-    public void publicarEstado(String postId){
-        try {
-            facebook.postStatusMessage(postId);
-        } catch (FacebookException ex) {
-            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * Asignas un me gusta a una publicación tuya asigandole la posición en la que está la publicación.
-     * NOTA: Esta funcion esta deshabilitada temporalmente por Facebook
-     */
-    public void megustaPost(){
-        try {
-            facebook.likePost(results.get(1).getId());
-        } catch (FacebookException ex) {
-            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * Subir una imagen a tu perfil con la URL de la página que tiene asiganda esa imagen.
-     * @throws java.net.MalformedURLException
-     */
-    public void publicarURLconImagen() throws MalformedURLException{
-        try {
-            PostUpdate post = new PostUpdate(new URL("https://www.wired.com"))
-                    .picture(new URL("https://www.wired.com/wp-content/uploads/2014/07/breakingbad-ft.jpg"))
-                    .name("Walter")
-                    .caption("wired.com")
-                    .description("Breaking Bad");
-            facebook.postFeed(post);
-        } catch (FacebookException ex) {
-            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * Buscador de noticias en Facebook relacionada con la palabra clave que tu elijas.
-     * @throws FacebookException 
-     */
-    public void buscarNoticias() throws FacebookException{
-        ResponseList<Post> results = facebook.getPosts("reebok");
-        System.out.println(results.toString());
-    }
-    /**
-     * Mirar tu biografía, si tienes algo nuevo que te han etiquetado, etc y sus comentarios.
-     */
-    public void mirarBiografia(){
-        try {
-            results = facebook.getFeed();
-            System.out.println(results.toString());
-        } catch (FacebookException ex) {
-            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * Publicar un comentario en una foto tuya seleccionando el ID.
-     * ?fbid=1435360446539314 (este seria el ID de la foto).
-     * Tiene que ser una foto tuya no vale la de otro usuario de Facebook.
-     * @throws FacebookException 
-     */
-    public void publicarComentarioFoto() throws FacebookException{
-        facebook.commentPhoto("1349349925140367", "Hola bonito buga");
-        
-    }
-    /**
-     * Publica un comentario en un estado tuyo seleccionando la posicion (puede ser estado, foto o video subido por ti).
-     * Tiene que ser un estado tuyo no vale uno de otra persona que te haya etiquetado.
-     */
-    
-    public void publicarComentarioEstado(){
-        try {
-            facebook.commentPost(results.get(1).getId(), "Prueba");
-        } catch (FacebookException ex) {
-            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    } 
+//    /**
+//     * Publica el estado que tu elijas en tu cuenta de facebook mediante el menú.
+//     * @param postId 
+//     */
+//    public void publicarEstado(String postId){
+//        try {
+//            facebook.postStatusMessage(postId);
+//        } catch (FacebookException ex) {
+//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//    /**
+//     * Asignas un me gusta a una publicación tuya asigandole la posición en la que está la publicación.
+//     * NOTA: Esta funcion esta deshabilitada temporalmente por Facebook
+//     */
+//    public void megustaPost(){
+//        try {
+//            facebook.likePost(results.get(1).getId());
+//        } catch (FacebookException ex) {
+//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//    /**
+//     * Subir una imagen a tu perfil con la URL de la página que tiene asiganda esa imagen.
+//     * @throws java.net.MalformedURLException
+//     */
+//    public void publicarURLconImagen() throws MalformedURLException{
+//        try {
+//            PostUpdate post = new PostUpdate(new URL("https://www.wired.com"))
+//                    .picture(new URL("https://www.wired.com/wp-content/uploads/2014/07/breakingbad-ft.jpg"))
+//                    .name("Walter")
+//                    .caption("wired.com")
+//                    .description("Breaking Bad");
+//            facebook.postFeed(post);
+//        } catch (FacebookException ex) {
+//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//    /**
+//     * Buscador de noticias en Facebook relacionada con la palabra clave que tu elijas.
+//     * @throws FacebookException 
+//     */
+//    public void buscarNoticias() throws FacebookException{
+//        ResponseList<Post> results = facebook.getPosts("reebok");
+//        System.out.println(results.toString());
+//    }
+//    /**
+//     * Mirar tu biografía, si tienes algo nuevo que te han etiquetado, etc y sus comentarios.
+//     */
+//    public void mirarBiografia(){
+//        try {
+//            results = facebook.getFeed();
+//            System.out.println(results.toString());
+//        } catch (FacebookException ex) {
+//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//    /**
+//     * Publicar un comentario en una foto tuya seleccionando el ID.
+//     * ?fbid=1435360446539314 (este seria el ID de la foto).
+//     * Tiene que ser una foto tuya no vale la de otro usuario de Facebook.
+//     * @throws FacebookException 
+//     */
+//    public void publicarComentarioFoto() throws FacebookException{
+//        facebook.commentPhoto("1349349925140367", "Hola bonito buga");
+//        
+//    }
+//    /**
+//     * Publica un comentario en un estado tuyo seleccionando la posicion (puede ser estado, foto o video subido por ti).
+//     * Tiene que ser un estado tuyo no vale uno de otra persona que te haya etiquetado.
+//     */
+//    
+//    public void publicarComentarioEstado(){
+//        try {
+//            facebook.commentPost(results.get(1).getId(), "Prueba");
+//        } catch (FacebookException ex) {
+//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    } 
     
 }
