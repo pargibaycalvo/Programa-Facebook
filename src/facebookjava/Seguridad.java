@@ -39,17 +39,17 @@ public class Seguridad {
         facebook = ff.getInstance();
         
     }
-//    /**
-//     * Publica el estado que tu elijas en tu cuenta de facebook mediante el menú.
-//     * @param postId 
-//     */
-//    public void publicarEstado(String postId){
-//        try {
-//            facebook.postStatusMessage(postId);
-//        } catch (FacebookException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Publica el estado que tu elijas en tu cuenta de facebook mediante el menú.
+     * @param postId 
+     */
+    public void publicarEstado(String postId){
+        try {
+            facebook.postStatusMessage(postId);
+        } catch (FacebookException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Asignas un me gusta a una publicación tuya asigandole la posición en la que está la publicación.
 //     * NOTA: Esta funcion esta deshabilitada temporalmente por Facebook
