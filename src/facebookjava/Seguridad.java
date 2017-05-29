@@ -61,22 +61,22 @@ public class Seguridad {
             Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Subir una imagen a tu perfil con la URL de la página que tiene asiganda esa imagen.
-//     * @throws java.net.MalformedURLException
-//     */
-//    public void publicarURLconImagen() throws MalformedURLException{
-//        try {
-//            PostUpdate post = new PostUpdate(new URL("https://www.wired.com"))
-//                    .picture(new URL("https://www.wired.com/wp-content/uploads/2014/07/breakingbad-ft.jpg"))
-//                    .name("Walter")
-//                    .caption("wired.com")
-//                    .description("Breaking Bad");
-//            facebook.postFeed(post);
-//        } catch (FacebookException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Subir una imagen a tu perfil con la URL de la página que tiene asiganda esa imagen.
+     * @throws java.net.MalformedURLException
+     */
+    public void publicarURLconImagen() throws MalformedURLException{
+        try {
+            PostUpdate post = new PostUpdate(new URL("https://www.wired.com"))
+                    .picture(new URL("https://www.wired.com/wp-content/uploads/2014/07/breakingbad-ft.jpg"))
+                    .name("Walter")
+                    .caption("wired.com")
+                    .description("Breaking Bad");
+            facebook.postFeed(post);
+        } catch (FacebookException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Buscador de noticias en Facebook relacionada con la palabra clave que tu elijas.
 //     * @throws FacebookException 
