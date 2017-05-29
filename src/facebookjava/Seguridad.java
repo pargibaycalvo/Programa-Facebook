@@ -85,17 +85,17 @@ public class Seguridad {
         ResponseList<Post> results = facebook.getPosts("reebok");
         System.out.println(results.toString());
     }
-//    /**
-//     * Mirar tu biografía, si tienes algo nuevo que te han etiquetado, etc y sus comentarios.
-//     */
-//    public void mirarBiografia(){
-//        try {
-//            results = facebook.getFeed();
-//            System.out.println(results.toString());
-//        } catch (FacebookException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Mirar tu biografía, si tienes algo nuevo que te han etiquetado, etc y sus comentarios.
+     */
+    public void mirarBiografia(){
+        try {
+            results = facebook.getFeed();
+            System.out.println(results.toString());
+        } catch (FacebookException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Publicar un comentario en una foto tuya seleccionando el ID.
 //     * ?fbid=1435360446539314 (este seria el ID de la foto).
