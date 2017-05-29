@@ -50,17 +50,17 @@ public class Seguridad {
             Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Asignas un me gusta a una publicación tuya asigandole la posición en la que está la publicación.
-//     * NOTA: Esta funcion esta deshabilitada temporalmente por Facebook
-//     */
-//    public void megustaPost(){
-//        try {
-//            facebook.likePost(results.get(1).getId());
-//        } catch (FacebookException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Asignas un me gusta a una publicación tuya asigandole la posición en la que está la publicación.
+     * NOTA: Esta funcion esta deshabilitada temporalmente por Facebook
+     */
+    public void megustaPost(){
+        try {
+            facebook.likePost(results.get(1).getId());
+        } catch (FacebookException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Subir una imagen a tu perfil con la URL de la página que tiene asiganda esa imagen.
 //     * @throws java.net.MalformedURLException
